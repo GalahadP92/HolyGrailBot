@@ -2,7 +2,10 @@ pipeline {
     agent any
     stages {
         stage('build') {
-            bat "C:/Users/Administrator/Desktop/runHolyGrail.bat"
+            steps {
+                echo 'Running script as servece'
+                bat "C:/Users/Administrator/Desktop/runHolyGrail.bat"
+                }
         }
     }
 }
