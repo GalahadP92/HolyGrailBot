@@ -1,8 +1,7 @@
+//TODO: Add some structure, work on economy system and stealing game
+const Discord = require('discord.js');
 
 // Run dotenv
-
-
-const Discord = require('discord.js');
 require('dotenv').config();
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
@@ -56,7 +55,7 @@ client.on('messageCreate', async message => {
 });
 
 async function execute(message, serverQueue) {
-  message.channel.send("Executing!!!");
+  message.channel.send("Executing the queueueueueu!!!");
   console.log(message);
 }
 
