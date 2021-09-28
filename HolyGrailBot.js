@@ -56,7 +56,7 @@ client.on('messageCreate', async message => {
 });
 
 async function execute(message, serverQueue) {
-  message.channel.send("Executing! ");
+  message.channel.send("Executing!!!");
   console.log(message);
 }
 
@@ -66,7 +66,7 @@ function skip(message, serverQueue) {
 }
 
 function stop(message, serverQueue) {
-  message.channel.send("Stopping! ");
+  message.channel.send("Stopping the music!");
   console.log(message);
 }
 
